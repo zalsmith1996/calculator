@@ -5,26 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="calculator-container">
-        <div class="display"></div>
-        <button id="7">7</button>
-        <button id="8">8</button>
-        <button id="9">9</button>
-        <button id="+">+</button>
-        <button id="4">4</button>
-        <button id="5">5</button>
-        <button id="6">6</button>
-        <button id="-">-</button>
-        <button id="1">1</button>
-        <button id="2">2</button>
-        <button id="3">3</button>
-        <button id="*">*</button>
-        <button id="c">C</button>
-        <button id="0">0</button>
-        <button id="/">/</button>
-        <button id="=">=</button>
+    <div class="container">
+        <input type="text" class="display" disabled>
+        <div class="keys">
+            <button class="number" id="number" value="7">7</button>
+            <button class="number" id="number" value="8">8</button>
+            <button class="number" id="number" value="9">9</button>
+            <button class="operator" id="operator" value="+">+</button>
+
+            <button class="number" id="number" value="4">4</button>
+            <button class="number" id="number" value="5">5</button>
+            <button class="number" id="number" value="6">6</button>
+            <button class="operator" id="operator" value="-">-</button>
+
+            <button class="number" id="number" value="1">1</button>
+            <button class="number" id="number" value="2">2</button>
+            <button class="number" id="number" value="3">3</button>
+            <button class="operator" id="operator" value="*">&times;</button>
+
+            <button class="clear operator" id="clear" value="">C</button>
+            <button class="number" id="number" value="0">0</button>
+            <button class="equal operator" id="equal" value="=">=</button>
+            <button class="operator" id="operator" value="/">&divide;</button>
+        </div>
     </div>
 </body>
 </html>
